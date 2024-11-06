@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                green: '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="lg:mx-14">
+
+  <header class="flex justify-around my-7">
+    <button id="blog" onclick="myBlog()" class="text-sm bg-green p-1 mx-5">Blog</button>
+
+    <div class="flex"><img class="w-5" src="assets/logo.png" alt="">
+    <h1 onclick="myhtml()" class="text-sm">Donate Bangladesh</h1></div>
+
+    <div class="flex"><img class="w-5" src="assets/coin.png" alt="">
+    <h1 class="text-sm">100000 BDT</h1></div>
+</header>
+
+    <br>
+    <br>
+    <br>
+    <section class="text-center">
+  <h1 class="text-2xl font-bold">
+    Important FAQ
+  </h1>
+  <br>
+  <br>
+<ul>
+  <li>What is the Document Object Model (DOM)?</li>
+  <li>How do you select an element from the DOM?</li>
+  <li>What is event delegation in the context of the DOM, and why is it useful?
+  </li>
+  <li>How do you manipulate an element's attributes and styles using the DOM?
+  </li>
+</ul>
+<br>
+<br>
+<div class="bg-orange-300 rounded-2xl p-10 shadow-xl">
+<h1 class="text-xl font-bold">What is the Document Object Model (DOM)?</h1>
+<br>
+<p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (like an HTML or XML file) as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, and text.
+  Key Features of the DOM:
+  Tree Structure: The DOM organizes the document in a hierarchical structure, with the document itself as the root node and elements as child nodes.
+  Dynamic Interaction: The DOM allows scripts (usually JavaScript) to manipulate the document's structure, style, and content in real time. This enables dynamic updates to web pages without requiring a full reload.
+  Language Independence: While the DOM is most commonly used with JavaScript in web development, it can be accessed and manipulated using other programming languages as well.
+  Standardized Interface: The DOM is standardized by the World Wide Web Consortium (W3C), ensuring consistent behavior across different browsers.
+  Common Operations:
+  Accessing Nodes: You can access elements using methods like getElementById, getElementsByClassName, or querySelector.
+  Modifying Nodes: You can change content with properties like innerHTML, add or remove elements with methods like appendChild and removeChild, and modify styles using the style property.
+  Event Handling: The DOM allows you to respond to user actions (like clicks and keyboard inputs) through event listeners.</p> <br> </div>
+  <br>
+  <br>
+  <div class="bg-orange-300 rounded-2xl p-10 shadow-xl">
+    <h1 class="text-xl font-bold">How do you select an element from the DOM?</h1>
+    <br>
+    <p>Select DOM Elements Using JavaScript
+<br>
+      Introduction.
+      Understanding the DOM as an Object Hierarchy.
+      Use an ID to Select an Element with .getElementById()
+      Use a CSS Selector to Select an Element with .querySelector()
+      Use a CSS Selector to Select Multiple Elements with .querySelectorAll()
+      Other Ways to Select Elements.</p> <br> </div>
+      <br>
+      <br>
+
+      <div class="bg-orange-300 rounded-2xl p-10 shadow-xl">
+        <h1 class="text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</h1>
+        <br>
+        <p>Event delegation is a technique in the context of the Document Object Model (DOM) that involves attaching a single event listener to a parent element rather than adding individual listeners to multiple child elements. This takes advantage of the event bubbling mechanism, where events propagate up from the target element to its ancestors in the DOM hierarchy.
+
+          How It Works:
+          Single Listener: You attach one event listener to a parent element (like a <ul> for a list of <li> items).
+          Event Bubbling: When an event (like a click) occurs on a child element, it bubbles up to the parent.
+          Event Targeting: Inside the event handler, you can determine which child element triggered the event using event.target.
+          Benefits of Event Delegation:
+          Performance: Reduces the number of event listeners in your application, leading to less memory usage and improved performance, especially with many child elements.
+          Dynamic Content: Automatically handles events for dynamically added child elements. If you add new children to the parent, they’ll inherit the event behavior without needing to attach new listeners.
+          Simplified Code: Reduces complexity in managing multiple event listeners, making your code easier to maintain.</p> <br> </div>
+          <br>
+          <br>
+          <div class="bg-orange-300 rounded-2xl p-10 shadow-xl">
+            <h1 class="text-xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</h1>
+            <br>
+            <p>Select the element using DOM methods.
+              Manipulate attributes with getAttribute and setAttribute.
+              Change styles using the style property.
+              Manage classes using classList.</p> <br> </div>
+</section>
+</body>
+</html>

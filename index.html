@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                green: '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="lg:mx-14">
+    <header class="flex justify-around my-7">
+        <button id="blog" onclick="myBlog()" class="text-sm bg-green p-1 mx-5">Blog</button>
+
+        <div class="flex"><img class="w-5" src="assets/logo.png" alt="">
+        <h1 onclick="myhtml()" class="text-sm">Donate Bangladesh</h1></div>
+
+        <div class="flex"><img class="w-5" src="assets/coin.png" alt="">
+        <h1 id="Main-Blance" class="text-sm">100000 BDT</h1></div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section class="text-center gap-x-5">
+        <button id="Donation" class="p-2 btn bg-green">Donation</button>
+        <button id="History" class="p-2 btn bg-green">History</button>
+    </section>
+<br>
+<br>
+<br>
+<section id="Donation-card">
+  <!-- First Card -->
+    <div class="sm:grid sm:grid-cols-2 justify-around lg:flex">
+        <div><img src="assets/noakhali.png" alt=""></div>
+        <div>
+            <div class="flex"><img class="w-5" src="assets/coin.png" alt="">
+                <h1 id="Text-Money" class="text-xl">00 BDT</h1></div> <br>
+
+                <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1> <br>
+                <p> The recent floods in Noakhali have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p> <br>
+                <input id="Input-Money" class="w-96" type="text" placeholder="donate money"> <br>
+                <br>
+                <button id="donate-btn" class="p-2 bg-green w-96">Donate Now</button> <br>
+        </div>
+      </div>
+    <br>
+    <br>
+    <br>
+    <!-- Second Card -->
+    <div class="sm:grid sm:grid-cols-2 justify-around lg:flex">
+      <div><img src="assets/quota-protest.png" alt=""></div>
+      <div>
+          <div class="flex"><img class="w-5" src="assets/coin.png" alt="">
+              <h1 id="Text-Money2" class="text-xl">00 BDT</h1></div> <br>
+
+              <h1 class="text-xl font-bold">Quota-protest, Bangladesh</h1> <br>
+              <p> The protest began in June 2024, in response to <br>Supreme Court of Bangladesh reinstating a 30% quota for descend <br> of freedom fighters, reversing the government decision made  in  <br> to the 2018 Bangladesh quota reform movement. Students began <br> feel like they have a limited opportunity based on. <br> The protest quickly spread throughout the  entire country because of <br> </p>
+              <br>
+              <input id="Input-Money2" class="w-96" type="text" placeholder="donate money"> <br>
+              <br>
+              <button id="donate-btn2" class="p-2 bg-green w-96">Donate Now</button> <br>
+      </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <!-- Third Card -->
+  <div class="sm:grid sm:grid-cols-2 justify-around lg:flex">
+    <div><img src="assets/feni.png" alt=""></div>
+    <div>
+        <div class="flex"><img class="w-5" src="assets/coin.png" alt="">
+            <h1 id="Text-Money3" class="text-xl">00 BDT</h1></div> <br>
+
+            <h1 class="text-xl font-bold">Donate for Flood at feni, Bangladesh</h1> <br>
+            <p> The recent floods in feni have caused significant damage to <br> homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief <br> efforts and making a positive impact on the lives of those in need.</p> <br>
+            <input id="Input-Money3" class="w-96" type="text" placeholder="donate money"> <br>
+            <br>
+            <button id="donate-btn3" class="p-2 bg-green w-96">Donate Now</button> <br>
+    </div>
+  </div>
+</section>
+
+<!-- History -->
+ <section id="History-Card" class="hidden">
+
+ </section>
+
+ <script src="index.js"></script>
+</body>
+</html>
